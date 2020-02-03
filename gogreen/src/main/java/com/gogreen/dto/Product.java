@@ -23,6 +23,10 @@ public class Product implements Serializable{
 		this.saldo = saldo;
 	}
 
+	public Product(String name2, String price2, String weight2, String description2, double saldo2) {
+		// TODO Auto-generated constructor stub
+	}
+
 	public int getCode() {
 		return code;
 	}

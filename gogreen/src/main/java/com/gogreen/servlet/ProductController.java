@@ -143,7 +143,7 @@ private static final long serialVersionUID = -7558166539389234332L;
 		}
 
 		// Creamos el objeto de producto (modelo)
-		Product product = new Product(codeProduct, name, price, weight, description, saldo);
+		Product product = new Product(name, price, weight, description, saldo);
 
 		// Modificar el objeto en la base de datos
 		int registrosModificados = new ProductDao().update(product);
