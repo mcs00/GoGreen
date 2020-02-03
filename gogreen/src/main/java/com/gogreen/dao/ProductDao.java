@@ -30,8 +30,9 @@ public class ProductDao {
 				Double price = rs.getDouble("pro_price");
 				Integer weight = rs.getInt("pro_weight");
 				String description = rs.getString("pro_description");
+				Double saldo = rs.getDouble("pro_saldo");
 
-				product = new Product(code, name, price, weight, description);
+				product = new Product(code, name, price, weight, description, saldo);
 				products.add(product);
 			}
 		} catch (SQLException ex) {
