@@ -21,14 +21,14 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <!-- Iteramos cada elemento de la lista de clientes -->
-                            <c:forEach var="cliente" items="${clientes}" varStatus="status" >
+                            <!-- Iteramos cada elemento de la lista de productos -->
+                            <c:forEach var="producto" items="${productos}" varStatus="status" >
                                 <tr>
                                     <td>${status.count}</td>
-                                    <td>${cliente.name} ${cliente.surname}</td>
-                                    <td> <fmt:formatNumber value="${cliente.balance}" type="currency" currencySymbol="€"/></td>
+                                    <td>${producto.name} ${producto.surname}</td>
+                                    <td> <fmt:formatNumber value="${producto.balance}" type="currency" currencySymbol="€"/></td>
                                     <td>
-                                        <a href="${pageContext.request.contextPath}/client?action=edit&idClient=${cliente.id}"
+                                        <a href="${pageContext.request.contextPath}/client?action=edit&idClient=${producto.id}"
                                            class="btn btn-secondary">
                                             <i class="fas fa-edit"></i> Editar
                                         </a>
@@ -55,7 +55,7 @@
                     <div class="card-body">
                         <h3>Total Productos</h3>
                         <h4 class="display-4">
-                            <i class="fas fa-users"></i> ${totalClientes}
+                            <i class="fas fa-users"></i> ${totalProductos}
                         </h4>
                     </div>
                 </div>        
