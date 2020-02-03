@@ -5,8 +5,8 @@ import javax.sql.DataSource;
 import org.apache.commons.dbcp2.BasicDataSource;
 
 public class DBConnection {
-	private static final String JDBC_URL = "jdbc:mysql://localhost:3306/client_manager?useUnicode=yes;characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
-    //private static final String JDBC_URL = "jdbc:mysql://localhost:3306/client_manager?useUnicode=true&useSSL=false&useTimezone=true&serverTimezone=UTC&allowPublicKeyRetrieval=true";
+	private static final String JDBC_URL = "jdbc:mysql://localhost:3306/startup?useUnicode=yes;characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
+    //private static final String JDBC_URL = "jdbc:mysql://localhost:3306/startup?useUnicode=true&useSSL=false&useTimezone=true&serverTimezone=UTC&allowPublicKeyRetrieval=true";
     private static final String JDBC_USER = "root";
     private static final String JDBC_PASSWORD = "admin";
 

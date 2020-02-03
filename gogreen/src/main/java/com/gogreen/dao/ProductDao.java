@@ -9,7 +9,7 @@ import com.gogreen.dto.Product;
 public class ProductDao {
 
 	/*
-	 * Llista tots els clients de la base de dades
+	 * Llista tots els product de la base de dades
 	 * 
 	 */
 	public List<Product> listar() {
@@ -46,7 +46,7 @@ public class ProductDao {
 	}
 
 	/*
-	 * Recupera un client a la base de dades segons el seu ID
+	 * Recupera un product a la base de dades segons el seu ID
 	 * 
 	 */
 	public Product findById(Product product) {
@@ -83,11 +83,11 @@ public class ProductDao {
 	}
 
 	/*
-	 * Crea un client a la base de dades
+	 * Crea un product a la base de dades
 	 * 
 	 */
 	public int create(Product product) {
-		String SQL_INSERT = "INSERT INTO client(pro_code, pro_name, pro_price, pro_weight, pro_description) "
+		String SQL_INSERT = "INSERT INTO product(pro_code, pro_name, pro_price, pro_weight, pro_description) "
 				+ " VALUES(?, ?, ?, ?, ?)";
 		Connection conn = null;
 		PreparedStatement stmt = null;
@@ -111,11 +111,11 @@ System.out.println(product.toString());
 	}
 
 	/*
-	 * Modifica un client de la base de dades
+	 * Modifica un product de la base de dades
 	 * 
 	 */
 	public int update(Product product) {
-		String SQL_UPDATE = "UPDATE client "
+		String SQL_UPDATE = "UPDATE product "
 				+ " SET pro_name=?, pro_price=?, pro_weight=?, pro_description=?, WHERE pro_code=?";
 		Connection conn = null;
 		PreparedStatement stmt = null;

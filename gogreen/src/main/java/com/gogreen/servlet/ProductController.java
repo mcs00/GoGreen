@@ -81,8 +81,8 @@ private static final long serialVersionUID = -7558166539389234332L;
 		session.setAttribute("totalProductos", products.size());
 		session.setAttribute("saldoTotal", this.calcularSaldoTotal(products));
 
-		// request.getRequestDispatcher("frmProduct.jsp").forward(request, response);
-		response.sendRedirect("frmProduct.jsp");
+		// request.getRequestDispatcher("fromProduct.jsp").forward(request, response);
+		response.sendRedirect("fromProduct.jsp");
 	}
 
 	private void editProduct(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

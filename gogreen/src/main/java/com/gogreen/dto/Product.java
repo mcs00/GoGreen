@@ -77,7 +77,7 @@ public class Product implements Serializable{
 
 	@Override
 	public String toString() {
-		return "Client [id=" + code + ", name=" + name + ", price=" + price + ", weight=" + weight + ", description=" + description + ", saldo=" + saldo + "]";
+		return "Product [id=" + code + ", name=" + name + ", price=" + price + ", weight=" + weight + ", description=" + description + ", saldo=" + saldo + "]";
 	}
 
 	public void setDescription(String description2) {

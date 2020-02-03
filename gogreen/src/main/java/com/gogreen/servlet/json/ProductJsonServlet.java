@@ -15,7 +15,7 @@ import com.gogreen.dto.Product;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 
-@WebServlet({ "/client.json", "/listClients.json" })
+@WebServlet({ "/product.json", "/listProducts.json" })
 public class ProductJsonServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
